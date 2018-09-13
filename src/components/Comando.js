@@ -1,8 +1,10 @@
 import React from 'react'
-import { Text, View, StyleSheet, TextInput } from 'react-native';
+import { Text, View, StyleSheet, TextInput, Button } from 'react-native';
 
 export default props => (
-    <Text>Comando</Text>
+    <Button 
+    title='Calcular'
+    />
 )
 
 const styles = StyleSheet.create({
