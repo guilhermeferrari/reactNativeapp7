@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, View } from 'react-native';
 
-import Topo from './components/Topo'
-import Painel from './components/Painel'
-import Resultado from './components/Resultado'
+import { Topo, Resultado, Painel } from './components'
 
 const Estilos = {
 };
