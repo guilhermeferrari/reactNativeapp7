@@ -9,5 +9,5 @@ const Estilos = {
 const app7 = () => (
     <App/>
 );
-lll
+
 AppRegistry.registerComponent('app7', () => app7);
