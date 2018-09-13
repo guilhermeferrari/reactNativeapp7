@@ -8,13 +8,12 @@ import Resultado from './src/components/Resultado'
 const Estilos = {
 };
 
-export default class app7 extends Component {
-  render() {
-    const {  } = Estilos;
-    return (
-        <View></View>
-    );
-  }
-}
+const app7 = () => (
+    <View>
+        <Topo />
+        <Resultado />
+        <Painel />
+    </View>
+);
 
 AppRegistry.registerComponent('app7', () => app7);
