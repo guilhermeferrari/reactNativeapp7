@@ -2,19 +2,19 @@ import React from 'react'
 import { Text, View, StyleSheet, TextInput, Picker } from 'react-native';
 
 export default props => (
-    <Picker style={styles.selec}>
-        <Picker.Item label='Soma' value='soma'/>
-        <Picker.Item label='Subatração' value='subtracao'/>
-    </Picker>
+    <View>
+        <Picker>
+            <Picker.Item label='Soma' value='soma' />
+            <Picker.Item label='Subtração' value='subtracao' />
+        </Picker>
+    </View>
 )
 
 const styles = StyleSheet.create({
     selec: {
-        height: 300,
-        width: 200
+        width: 100
     },
-    visor: {
-        fontSize: 20,
-        fontWeight: '300'
+    viewSelec: {
+        backgroundColor: 'orange',
     }
 })
