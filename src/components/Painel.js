@@ -10,18 +10,20 @@ class Painel extends Component {
         super(props);
         this.state = {
             num1: '',
-            num2: ''
+            num2: '',
+            operacao: 'soma'
         }
         this.calcular = this.calcular.bind(this);
         this.atualizavalor = this.atualizavalor.bind(this);
+        this.mudaOperacao = this.mudaOperacao.bind(this);
     }
 
-    calcular(){
+    calcular() {
         const resultado = parseFloat(this.state.num1) + parseFloat(this.state.num2);
         alert(resultado)
     }
 
-    atualizavalor(nome, valor){
+    atualizavalor(nome, valor) {
         const obj = {};
         obj[nome] = valor;
         this.setState(obj);
@@ -31,14 +33,18 @@ class Painel extends Component {
         // })  
     }
 
+    mudaOperacao(operacao){
+        this.setState({operacao})
+    }
+
     render() {
         return (
             <View>
                 <Entrada num1={this.state.num1}
-                    num2={this.state.num2} 
-                    atualizavalor = {this.atualizavalor}/>
-                <Operacao />
-                <Comando acao={this.calcular}/>
+                    num2={this.state.num2}
+                    atualizavalor={this.atualizavalor} />
+                <Operacao operacao={this.state.operacao} mudaOperacao={this.mudaOperacao}/>
+                <Comando acao={this.calcular} />
             </View>
         );
     }
