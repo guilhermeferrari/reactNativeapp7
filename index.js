@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
-import { AppRegistry, View } from 'react-native';
+import React from 'react';
+import { AppRegistry } from 'react-native';
 
-import Topo from './src/components/Topo'
-import Painel from './src/components/Painel'
-import Resultado from './src/components/Resultado'
+import App from './src/App';
 
 const Estilos = {
 };
 
 const app7 = () => (
-    <View>
-        <Topo />
-        <Resultado />
-        <Painel />
-    </View>
+    <App/>
 );
 
 AppRegistry.registerComponent('app7', () => app7);
