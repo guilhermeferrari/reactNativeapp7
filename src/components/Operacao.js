@@ -5,9 +5,10 @@ export default class Operacao extends Component {
     render() {
         return (
             <View>
-                <Picker selectedValue={this.props.operacao} onValueChange={op =>{
-                    this.props.mudaOperacao(op)
-                }}>
+                <Picker selectedValue={this.props.operacao}
+                    onValueChange={op => {
+                        this.props.mudaOperacao(op)
+                    }}>
                     <Picker.Item label='Soma' value='soma' />
                     <Picker.Item label='Subtração' value='subtracao' />
                 </Picker>
